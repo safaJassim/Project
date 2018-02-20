@@ -1,0 +1,8 @@
+
+
+<div>
+  <select  [(ngModel)]="color" >
+     <option *ngFor="let oColor of colors" [ngValue]="oColor">{{oColor}}</option>
+  </select>
+</div>
+<canvas #can1 id="canvas1" width="200" height="100" tabindex="1" (mouseup)="mouseup($event)" (mousedown)="mousedown($event)" (mousemove)="mousemove($event)"> </canvas>
